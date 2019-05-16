@@ -1,0 +1,7 @@
+Task: <input type="text" [(ngModel)]='todo.task'><br>
+Username <input type="text" [(ngModel)]='todo.username'><br>
+<button (click)="addTodo()">Add Todo</button>
+
+<div *ngFor="let td of todos">
+id: {{td.id}} Name: {{td.task}} Username: <a [routerLink]="['/user/'+td.username]">{{td.username}}</a>
+</div>

@@ -1,0 +1,7 @@
+<br>Task: <input type="text" [(ngModel)]='todo.task'><br>
+<button (click)="addTodo()">Add Todo</button>
+
+<div *ngFor="let td of todos">
+id: {{td.id}} Name: {{td.task}}
+<button (click)="deleteTodo(td.id)">Delete this Todo</button>
+</div>
